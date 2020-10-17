@@ -1,4 +1,6 @@
 # Jarkom_Modul1_Lapres_D12
+- Muhammad Ilham Bayhaqi - 05111840000069
+- Clever Dicki Marpaung - 05111840000116
 
 ## A. Display Filter
 1. Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
