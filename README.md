@@ -28,11 +28,15 @@ clue: "25 50 44 46"
 1. Webserver: ngingx/1.14.0 (Ubuntu)
    <img src="images/soal1.png">
 
-2.
+2. Menggunakan display filter : http.request.uri contains "Tim", sehingga menampilkan paket yang menunjukkan link http dari images tersebut.
+   <img src="images/soal2.png">
+   <img src="images/soal2a.png">
+   
+3. Menggunakan display filter : http.request.uri contains "login" && http.host == "ppid.dpr.go.id"
+   <img src="images/soal3.png">
 
-3.
-
-4.
+4. Menggunakan display filter : http.authbasic
+   <img src="images/soal4.png">
 
 5. Username: kakakgamtenk
    Password: hartatahtabermuda
@@ -40,7 +44,12 @@ clue: "25 50 44 46"
    Setelah Username dan Password diinputkan maka akan muncul page berikut:
    <img src="images/soal5a.png">
 
-6.
+6. Untuk mencari password digunakan display filter : ftp-data.command contains "zipkey.txt"
+   <img src="images/soal6a.png">
+   Password : hey997400323051   
+   Untuk melakukan extract Answer.zip menggunakan display filter : ftp-data.command contains "Answer.zip" kemudian dilakukan TCP Stream dan save as dengan Raw.
+   <img src="images/soal6b.png">
+   <img src="images/soal6.png">
 
 7. Menggunakan display filter command: frame contains “Yes.pdf”
    <img src="images/soal7.png">
@@ -49,7 +58,11 @@ clue: "25 50 44 46"
    Didalam file zip tersebut ada file pdf bernama “Yes.pdf”
    <img src="images/soal7b.png">
 
-8.
+8. Pertama-tama dilakukan pencarian server mana yang menggunakan koneksi Microsoft FTP Service dengan melakukan display filter sebagai berikut.
+   <img src="images/soal8.png">
+   Kemudian ditemukan bahwa ip host-nya adalah 198.246.117.106. Untuk mencari paket yang didownload digunakan display filter kembali : ftp.request.command == "RETR" && ip.dst_host == 198.246.117.106
+   <img src="images/soal8a.png">
+   Objek yang didownload adalah file Readme
 
 9. Menggunakan display filter command: ftp.request.command == USER || ftp.request.command == PASS
    <img src="images/soal9.png">  
@@ -60,7 +73,8 @@ clue: "25 50 44 46"
     Download file tersebut dan simpan dengan file berekstensi pdf.
     <img src="images/soal10b.png">
 
-11.
+11. Filter: port 21
+   <img src="images/soal11.png">
 
 12. Filter: src port 80
     <img src="images/soal12.png">
