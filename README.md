@@ -23,3 +23,53 @@ clue: "25 50 44 46"
 14. Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 15. Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
 
+
+## Jawaban
+1. Webserver: ngingx/1.14.0 (Ubuntu)
+   <img src="images/soal1.png">
+
+2.
+
+3.
+
+4.
+
+5. Username: kakakgamtenk
+   Password: hartatahtabermuda
+   <img src="images/soal5.png">
+   Setelah Username dan Password diinputkan maka akan muncul page berikut:
+   <img src="images/soal5a.png">
+
+6.
+
+7. Menggunakan display filter command: frame contains “Yes.pdf”
+   <img src="images/soal7.png">
+   Kemudian file didownload dalam bentuk file berekstensi zip
+   <img src="images/soal7a.png">
+   Didalam file zip tersebut ada file pdf bernama “Yes.pdf”
+   <img src="images/soal7b.png">
+
+8.
+
+9. Menggunakan display filter command: ftp.request.command == USER || ftp.request.command == PASS
+   <img src="images/soal9.png">  
+   
+10. Menggunakan fitur “Find Packet”, kemudian ganti filter ke “Hex value” dan copy-paste clue pada soal ke tab pencarian hex value. Maka akan ada paket yang diblok
+    <img src="images/soal10.png">
+    <img src="images/soal10a.png">
+    Download file tersebut dan simpan dengan file berekstensi pdf.
+    <img src="images/soal10b.png">
+
+11.
+
+12. Filter: src port 80
+    <img src="images/soal12.png">
+    
+13. Filter: dst port 443
+    <img src="images/soal13.png">
+    
+14. Filter: src host 192.168.0.6
+    <img src="images/soal14.png">
+    
+15. Filter: dst host monta.if.its.ac.id
+    <img src="images/soal15.png">
